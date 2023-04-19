@@ -1,0 +1,55 @@
+a method that returns the sum of two integers
+
+define the method name and allow for two inputs
+ensure that the inputs are integers
+add the two integers together
+return the answer
+
+
+a method that takes an array of strings and returns a string that is all those string concatenated together
+
+define the method name and allow for an array input
+create a new string that is empty
+call each on the array and add each string in the array to the string that is empty, with the shovel operator <<
+return the new string that is made up of the array of strings
+
+
+a method that takes an array of integers and return a new array with every other element from the origin array starting with the first element
+
+define the method name and allow for an array input
+create a new array that is empty
+for (0..array.length) if num % 2 == 0 
+old array[num] << to the new array.
+return the new array
+
+
+a method that determines the index of the 3rd occurrence of a given character in a string. 
+For instance, if the given character is 'x' and the string is 'axbxcdxex', 
+the method should return 6 (the index of the 3rd 'x'). 
+If the given character does not occur at least 3 times, return nil.
+
+define the method name and take two inputs, ( a character, a string)
+counter = 0
+array = []
+a string.each_char and use the block to determine if the each_char == a character.
+add each_char one at a time to array while doing this
+if true increment counter
+if counter reaches 3 at all then you return the length of the array - 1 to get the index.
+
+could also convert the string to an array right away and use each onthe array to do something similar. Either way works.
+
+
+a method that takes two arrays of numbers and returns the result of merging the arrays. 
+The elements of the first array should become the elements at the even indexes of the returned array, 
+while the elements of the second array should become the elements at the odd indexes. For instance:
+
+I mean... you can define the method and make it use the zip and flatten methods on your two arrays.
+
+otherwise, define the method and take two arrays and inputs (arr1, arr2)
+counter = 1
+new array = []
+if counter.odd? then .shift() arr1 to new array then increment counter by 1
+if counter.even? then .shift() arr2 to new array then increment counter by 1
+if arr1.empty? && arr2.empty you can just return new array.
+
+this works because we can assume both arrays have the same number of elements.
