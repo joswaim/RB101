@@ -45,4 +45,12 @@
 # end
 
 
-p string_lengths('to be or not to be')
+# p string_lengths('to be or not to be')
+
+
+# s = 'abc'
+# puts s.public_methods(false).inspect
+
+
+# a = [5, 9, 3, 11]
+# puts a.min(2)
