@@ -8,7 +8,11 @@ def prompt(message)
 end
 
 def valid_number?(num)
-  num.to_i != 0
+  num.to_f.to_s == num
+end
+
+def number?(num)
+  num.count('a-zA-Z').positive?
 end
 
 def operation_to_message(oper)
@@ -68,7 +72,7 @@ loop do # main loop
   operator = ''
   loop do
     operator = gets.chomp
-    break if [1, 2, 3, 4].include?(operator.to_i)
+    break if [1, 2, 3, 4].include?(operator.to_f)
 
     prompt('Must choose 1, 2, 3, or 4.')
   end
@@ -77,11 +81,11 @@ loop do # main loop
 
   result =  case operator
             when '1'
-              number1.to_i + number2.to_i
+              number1.to_f + number2.to_f
             when '2'
-              number1.to_i - number2.to_i
+              number1.to_f - number2.to_f
             when '3'
-              number1.to_i * number2.to_i
+              number1.to_f * number2.to_f
             when '4'
               number1.to_f / number2
             end
