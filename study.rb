@@ -574,3 +574,18 @@ greeting = 'Hello'
 
 # We can therefore say that in Ruby, every value apart from false and nil is truthy; we can also say that false and nil are falsy.
 
+
+
+# ```ruby
+# arr.each do |element|
+#   puts element.foo
+# end
+# ```
+
+# This paragraph talks about the `each` method being
+# called by the array referenced by `arr` in the above
+# code. It invokes the block for each element, passing
+# that element to the block as an argument. Within the
+# block, the element is known by the parameter name
+# `element`, and the block uses the `puts` method to
+# print the value of `element.foo`.
